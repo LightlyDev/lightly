@@ -6,6 +6,7 @@ import { BrowserView, MobileView } from 'react-device-detect';
 import videobg from "../videos/home.mp4";
 
 const Home = ({ classicHeader, darkTheme, handleNavClick }) => {
+
   return (
     <section id="home">
       <div className="hero-wrap">
@@ -15,7 +16,9 @@ const Home = ({ classicHeader, darkTheme, handleNavClick }) => {
         <MobileView>
           <div
             className="hero-bg parallax"
-            style={{ backgroundImage: 'url("images/intro-bg.jpg")' }}
+            style={{
+              backgroundImage: 'url("images/intro-bg.jpg")'
+            }}
           ></div>
         </MobileView>
         {/* -------------------video background browser view---------------------- */}
