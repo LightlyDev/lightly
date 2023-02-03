@@ -1,5 +1,8 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
+
+import { BrowserView, MobileView } from 'react-device-detect';
+
 import videobg from "../videos/home.mp4";
 
 const Home = ({ classicHeader, darkTheme, handleNavClick }) => {
@@ -8,24 +11,25 @@ const Home = ({ classicHeader, darkTheme, handleNavClick }) => {
       <div className="hero-wrap">
         <div className="hero-mask opacity-8 bg-dark" />
 
-        {/* ---------------image background------------------ */}
-
-        {/* <div
-          className="hero-bg parallax"
-          style={{ backgroundImage: 'url("images/intro-bg.jpg")' }}
-        ></div> */}
-
-        {/* -------------------video background---------------------- */}
-
-        <div className="player hero-bg parallax">
-          <video
-            src={videobg}
-            autoPlay
-            muted
-            loop
-            style={{ width: "100%", height: "100vh", objectFit: "cover" }}
-          ></video>
-        </div>
+        {/* ---------------image background mobile view------------------ */}
+        <MobileView>
+          <div
+            className="hero-bg parallax"
+            style={{ backgroundImage: 'url("images/intro-bg.jpg")' }}
+          ></div>
+        </MobileView>
+        {/* -------------------video background browser view---------------------- */}
+        <BrowserView>
+          <div className="player hero-bg parallax">
+            <video
+              src={videobg}
+              autoPlay
+              muted
+              loop
+              style={{ width: "100%", height: "100vh", objectFit: "cover" }}
+            ></video>
+          </div>
+        </BrowserView>
 
         <div className="hero-content section d-flex min-vh-100">
           <div className="container my-auto">
