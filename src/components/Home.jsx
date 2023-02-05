@@ -5,7 +5,7 @@ import { BrowserView, MobileView } from 'react-device-detect';
 
 import videobg from "../videos/home.mp4";
 
-const Home = ({ classicHeader, darkTheme, handleNavClick }) => {
+const Home = ({ handleNavClick }) => {
 
   return (
     <section id="home">
@@ -17,8 +17,7 @@ const Home = ({ classicHeader, darkTheme, handleNavClick }) => {
           <div
             className="hero-bg parallax"
             style={{
-              backgroundImage: 'url("images/intro-bg.jpg")'
-            }}
+              backgroundImage: 'url("images/intro-bg.jpg")'            }}
           ></div>
         </MobileView>
         {/* -------------------video background browser view---------------------- */}
@@ -53,7 +52,7 @@ const Home = ({ classicHeader, darkTheme, handleNavClick }) => {
                   />
                 </h2>
                 <p className="text-5 text-light mb-4">
-                  based out of Raleigh, North Carolina.
+                  based out of Raleigh, North Carolina.z
                 </p>
                 <a
                   href="#contact"
