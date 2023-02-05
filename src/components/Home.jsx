@@ -52,7 +52,7 @@ const Home = ({ handleNavClick }) => {
                   />
                 </h2>
                 <p className="text-5 text-light mb-4">
-                  based out of Raleigh, North Carolina.z
+                  based out of Raleigh, North Carolina.
                 </p>
                 <a
                   href="#contact"
