@@ -114,7 +114,7 @@ const Contact = ({ classicHeader, darkTheme }) => {
                 "mb-3 text-5 text-uppercase " + (darkTheme ? "text-white" : "")
               }
             >
-              Follow Me
+              Follow Us
             </h2>
             <ul
               className={
